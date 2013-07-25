@@ -15,18 +15,20 @@ How to Use
 
 Just issue a normal AJAX request.
 
-    jQuery.ajax({
-      url: "/EmailApi/SendEmailService.asmx/SendEmail",
-      type: "POST",
-      data: {
-        to: "test@example.com",
-	subject: "Test Email",
-	body: "It is an email"
-      }
-    });
+```javascript
+jQuery.ajax({
+  url: "/EmailApi/SendEmailService.asmx/SendEmail",
+  type: "POST",
+  data: {
+    to: "test@example.com",
+    subject: "Test Email",
+    body: "It is an email"
+  }
+});
+```
 
 Contributors
 =========
 
-pinglamb (from AppZolute)
+* [pinglamb](http://github.com/pinglamb) (from [AppZolute](http://github.com/appzolute))
 
