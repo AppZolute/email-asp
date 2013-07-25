@@ -19,12 +19,17 @@ Just issue a normal AJAX request.
 jQuery.ajax({
   url: "/EmailApi/SendEmailService.asmx/SendEmail",
   type: "POST",
+  contentType: "application/x-www-form-urlencoded"
   data: {
-    to: "test@example.com",
+    from: "from@example.com",
+    to: "test@example.com,john.doe@example.com",
+    cc: "",
+    bcc: "bcc@example.com",
     subject: "Test Email",
     body: "It is an email"
   }
 });
+
 ```
 
 Contributors
